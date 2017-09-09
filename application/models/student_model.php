@@ -34,8 +34,13 @@ class student_model extends CI_model{
 	}
 	public function add_crs($data){
 		$this->db->insert('course',$data);
-		print_r($_POST);
 		return TRUE;
+		
+	}
+	public function crs(){
+		$query=$this->db->get('course');
+		return $query->result_array();
+		
 		
 	}
 

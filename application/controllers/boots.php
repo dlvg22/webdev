@@ -41,6 +41,7 @@ class Boots extends CI_Controller {
 	}
 	public function add_student(){
 		$header['title']="ADD student";
+	
 		if($_SERVER['REQUEST_METHOD']=='POST'){
 			
 		$validate=array(
@@ -55,7 +56,18 @@ class Boots extends CI_Controller {
 		if($this->form_validation->run()===FALSE)
 		{
 			$data['errors']=validation_errors();
+			
+		
 			$header['title']="Christine";
+			
+			$rs=$this->Student->crs();
+		foreach($rs as $s)
+		{
+			$info=array('course'=>$s['name']);
+			$student[]=$info;
+		}
+		$data['course']=$student;
+		
 			$this->load->view('include/header',$header);
 			$this->load->view('students/new_student',$data);
 			$this->load->view('include/footer');
@@ -81,10 +93,17 @@ class Boots extends CI_Controller {
 			
 		}
 		else {
-			
+				$rs=$this->Student->crs();
+		foreach($rs as $s)
+		{
+			$info=array('course'=>$s['name']);
+			$student[]=$info;
+		}
+			$data['course']=$student;
+		
 			$header['title']="Christine";
 			$this->load->view('include/header',$header);
-			$this->load->view('students/new_student');
+			$this->load->view('students/new_student',$data);
 			$this->load->view('include/footer');
 			
 		}
@@ -108,7 +127,7 @@ class Boots extends CI_Controller {
 		if($_SERVER['REQUEST_METHOD']=='POST'){
 		$data=array('name'=>$_POST['course']);
 		$this->Student->add_crs($data);
-		
+		redirect('boots/course','refresh');
 		}
 		else{
 			
@@ -118,6 +137,22 @@ class Boots extends CI_Controller {
 		$this->load->view('include/footer');	
 		}
 		
+	}
+	public function course()
+	{
+	$header_data['title']="Course View";
+	$rs=$this->Student->crs();
+	foreach($rs as $s)
+		{
+			$info=array('course'=>$s['name']);
+			$student[]=$info;
+			
+		}
+		$data['course']=$student;
+		
+		$this->load->view('include/header',$header_data);	
+		$this->load->view('students/course',$data);
+		$this->load->view('include/footer');	
 	}
 	
 }

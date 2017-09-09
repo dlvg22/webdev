@@ -6,16 +6,14 @@
 	</div>
 	<div class="row">
 		<div class="col-md-4 menu">
-		
-		<div class="btn-group">
-			<ul class="navbar">
-			<li>Student</li>
-			<li>Courses</li>
-			<li>MENU</li>
-			<li>MENU</li>
-			</ul>
-			</div>
-		
+		<div class="navigation">
+		<ul>
+		</li><a href="<?php echo base_url('boots');?>">View student</a><li>
+		</li><a href="<?php echo base_url('boots/course');?>">View course</a><li>
+		</li><a href="<?php echo base_url('boots/add_Student');?>">Add student</a><li>
+		</li><a href="<?php echo base_url('boots/add_course');?>">Add course</a><li>
+		</ul>
+		</div>
 			
 		</div>
 
@@ -45,21 +43,20 @@ foreach($student as $s)
 				<td>'.$s['course'].'</td>
 				<td>'.$s['sex'].'</td>
 				<td> <a href="'.base_url('students/profile/'.$s['idno']).'">VIEW </a>|<a href="'.base_url('students/update/'.$s['idno']).'"> EDIT</a> |<a href="'.base_url('boots/del/'.$s['idno']).'"> DELETE</a></td>
-	<tr>';
+	</tr>';
 	/*note : base url content is the controller_name/function_name*/
 }
 ?>	
 </tbody>
 </table>
 
-  <a class="btn btn-primary" href="boots/add_student" role="button">ADD STUDENT</a>
-  <a class="btn btn-primary" href="boots/add_course" role="button">ADD COURSE</a>
+  
 
 </div>
 </div>
 <div class="row">
 	<div class="col-md-12 col-xs-12 text-center footer ">
-		Copy &copy 2017 . bootstrap
+		Copy &copy 2017 . bootst
 	</div>
 
 </div>
