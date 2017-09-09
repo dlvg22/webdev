@@ -6,6 +6,7 @@
 	</div>
 	<div class="row">
 		<div class="col-md-4 menu">
+
 		<div class="navigation">
 		<ul>
 		</li><a href="<?php echo base_url('boots');?>">View student</a><li>
@@ -14,6 +15,7 @@
 		</li><a href="<?php echo base_url('boots/add_course');?>">Add course</a><li>
 		</ul>
 		</div>
+
 			
 		</div>
 
@@ -26,7 +28,7 @@
 	<th class="success">LAST NAME</th>
 	<th class="info">FIRST NAME</th>
 	<th >MIDDLE NAME</th>
-	<th>ACTIONS</th>
+	<th>COURSE</th>
 	<th>SEX</th>
 	<th>ACTIONS</th>
 	</thead>
@@ -56,7 +58,9 @@ foreach($student as $s)
 </div>
 <div class="row">
 	<div class="col-md-12 col-xs-12 text-center footer ">
-		Copy &copy 2017 . bootst
+
+		Copy &copy 2017 . bootstrap
+
 	</div>
 
 </div>

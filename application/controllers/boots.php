@@ -127,14 +127,14 @@ class Boots extends CI_Controller {
 		if($_SERVER['REQUEST_METHOD']=='POST'){
 		$data=array('name'=>$_POST['course']);
 		$this->Student->add_crs($data);
+
 		redirect('boots/course','refresh');
+
 		}
-		else{
-			
-			
+		else{	
 		$this->load->view('include/header',$header_data);	
 		$this->load->view('students/addCourse');
-		$this->load->view('include/footer');	
+		$this->load->view('include/footer');
 		}
 		
 	}
