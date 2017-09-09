@@ -43,7 +43,7 @@
 		<input type="radio" class="" id="sex" value="M"/> Male
 		<input type="radio" class="" id="sex" value="F"/> Female
 	</div>
-	<div class="form-gorup">
+	<div class="form-group">
 		<button type="submit" class="btn btn-primary">
 			Save<span class="glyphicon glyphicon-save"></span>
 			</button>
