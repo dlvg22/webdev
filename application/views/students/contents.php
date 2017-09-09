@@ -53,6 +53,7 @@ foreach($student as $s)
 </table>
 
   <a class="btn btn-primary" href="boots/add_student" role="button">ADD STUDENT</a>
+  <a class="btn btn-primary" href="boots/add_course" role="button">ADD COURSE</a>
 
 </div>
 </div>

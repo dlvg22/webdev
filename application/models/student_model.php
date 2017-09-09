@@ -29,7 +29,14 @@ class student_model extends CI_model{
 	public function delete_student($condition){	
 		$this->db->where($condition);
 		$this->db->delete($this->table);
+		
 		return TRUE;	
+	}
+	public function add_crs($data){
+		$this->db->insert('course',$data);
+		print_r($_POST);
+		return TRUE;
+		
 	}
 
 

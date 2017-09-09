@@ -103,6 +103,22 @@ class Boots extends CI_Controller {
 		$this->load->view('students/addForm');
 		$this->load->view('include/footer');		
 	}
+	public function add_course(){
+		$header_data['title']="Add new course";
+		if($_SERVER['REQUEST_METHOD']=='POST'){
+		$data=array('name'=>$_POST['course']);
+		$this->Student->add_crs($data);
+		
+		}
+		else{
+			
+			
+		$this->load->view('include/header',$header_data);	
+		$this->load->view('students/addCourse');
+		$this->load->view('include/footer');	
+		}
+		
+	}
 	
 }
 ?>
