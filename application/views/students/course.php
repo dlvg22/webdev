@@ -9,11 +9,11 @@
 		
 		<div class="btn-group">
 			<ul class="navbar">
+			<li>Student</li>
+			<li>Courses</li>
 			
-			<li><a class="btn btn-primary " href="students/course" role="button">STUDENT</a>
-			<li><a class="btn btn-primary " href="students/course" role="button">COURSE</a></li>
-			<li><a class="btn btn-primary " href="students/course" role="button">MENU</a></li>
-			
+			<a class="btn btn-primary" href="students/course" role="button">COURSE</a>
+			<li>MENU</li>
 			
 			</ul>
 			</div>
@@ -30,7 +30,7 @@
 	<th class="success">LAST NAME</th>
 	<th class="info">FIRST NAME</th>
 	<th >MIDDLE NAME</th>
-	<th>COURSE</th>
+	<th>ACTIONS</th>
 	<th>SEX</th>
 	<th>ACTIONS</th>
 	</thead>
@@ -55,7 +55,6 @@ foreach($student as $s)
 </table>
 
   <a class="btn btn-primary" href="boots/add_student" role="button">ADD STUDENT</a>
-  <a class="btn btn-primary" href="boots/add_course" role="button">ADD COURSE</a>
 
 </div>
 </div>
