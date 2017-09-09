@@ -1,4 +1,4 @@
-9<?php
+<?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Students extends CI_Controller {
@@ -30,7 +30,7 @@ class Students extends CI_Controller {
 		// $this->load->
 		// $data['students']=array('');	
 		$header_data['title']="View Students";
-
+		
 		$rs=$this->Student->read();
 		foreach($rs as $r){
 			$info= array(
@@ -45,7 +45,7 @@ class Students extends CI_Controller {
 			
 		}
 		$data['students']=$students;
-		
+	
 	
 		$this->load->view('include/header',$header_data );
 		$this->load->view('students/viewstudents',$data );

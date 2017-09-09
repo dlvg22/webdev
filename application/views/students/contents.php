@@ -11,7 +11,7 @@
 			<ul class="navbar">
 			
 			<li><a class="btn btn-primary " href="students/course" role="button">STUDENT</a>
-			<li><a class="btn btn-primary " href="students/course" role="button">COURSE</a></li>
+			<li><a class="btn btn-primary " href="boots/course" role="button">COURSE</a></li>
 			<li><a class="btn btn-primary " href="students/course" role="button">MENU</a></li>
 			
 			
@@ -61,7 +61,7 @@ foreach($student as $s)
 </div>
 <div class="row">
 	<div class="col-md-12 col-xs-12 text-center footer ">
-		Copy &copy 2017 . bootSTRAP
+		Copy &copy 2017 . bootstrap
 	</div>
 
 </div>
