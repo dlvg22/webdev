@@ -22,6 +22,7 @@
 
 <div class="col-md-8 col-xs-8 col-sm-8 contents">
 <table class="table table-stripped table-responsive table-hover ">
+	
 	<thead>
 	<th class="warning">ID NO.</th>
 	<th class="success">LAST NAME</th>
