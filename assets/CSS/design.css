@@ -11,3 +11,14 @@ body{
 	 background-color:blue;
 	color:blue; 
  }
+ .navigation{
+	 font-size:25px;
+	 min-height:562px;
+	
+	 
+ }
+
+ ul,li{
+	 
+	 	 list-style:none;
+ }
