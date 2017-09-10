@@ -45,7 +45,7 @@ class Boots extends CI_Controller {
 		if($_SERVER['REQUEST_METHOD']=='POST'){
 			
 		$validate=array(
-		array('field'=>'idno','label'=>'ID no','rules'=>'required|min_length[5]|is_unique[student.idno]'),
+		array('field'=>'idno','label'=>'ID no','rules'=>'required|min_length[5]'),
 		array('field'=>'fname','label'=>'first name','rules'=>'required'),
 		array('field'=>'mname','label'=>'Middle','rules'=>'required'),
 		array('field'=>'lname','label'=>'Last Name','rules'=>'required'),
