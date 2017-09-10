@@ -56,9 +56,7 @@ class Boots extends CI_Controller {
 		if($this->form_validation->run()===FALSE)
 		{
 			$data['errors']=validation_errors();
-			
-		
-			$header['title']="Christine";
+			$header['title']="Error";
 			
 			$rs=$this->Student->crs();
 		foreach($rs as $s)
