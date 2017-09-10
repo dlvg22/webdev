@@ -99,7 +99,7 @@ class Boots extends CI_Controller {
 		}
 			$data['course']=$student;
 		
-			$header['title']="Christine";
+			$header['title']="Create student";
 			$this->load->view('include/header',$header);
 			$this->load->view('students/new_student',$data);
 			$this->load->view('include/footer');

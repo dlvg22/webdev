@@ -18,17 +18,19 @@
 		</div>
 		
 		
-
-		</div>
-	
-
-<div class="col-md-8 col-xs-8 col-sm-8 contents">
-<?php 
+		
+		<?php 
 		if (isset($errors)){
 		echo 	'<h6>'.$errors.'</h6>';
 			
 		}
 		?>
+			
+		</div>
+	
+
+<div class="col-md-8 col-xs-8 col-sm-8 contents">
+
 	<form role="form" method="POST">
 	<div class="form-group">
 	<label for="idno"> ID no.</label>
