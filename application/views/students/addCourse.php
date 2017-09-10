@@ -22,7 +22,9 @@
 <div class="col-md-8">
 	<form role="form" method="POST">
 	<div class="form-group">
-	<label for="idno"> Course</label>
+
+	<label for="idno"> COURSE.</label>
+
 	<input type="text" class="form-control" id="idno" name="course" value="" />
 	
 	</div>

@@ -18,7 +18,18 @@
 		</div>
 		
 		
-
+<<<<<<< HEAD
+		
+		<?php 
+		if (isset($errors)){
+		echo 	'<h6>'.$errors.'</h6>';
+			
+		}
+		
+		?>
+=======
+>>>>>>> 9edf6938c06a36fd5ca7003d8296c919b169d8ef
+			
 		</div>
 	
 
