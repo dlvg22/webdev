@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 09, 2017 at 08:54 AM
+-- Generation Time: Sep 10, 2017 at 02:27 AM
 -- Server version: 5.7.11
 -- PHP Version: 5.6.19
 
@@ -19,6 +19,27 @@ SET time_zone = "+00:00";
 --
 -- Database: `student`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `course`
+--
+
+CREATE TABLE `course` (
+  `name` varchar(10) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `course`
+--
+
+INSERT INTO `course` (`name`) VALUES
+('BSIT'),
+('BSCS'),
+('BSME'),
+('BS nursing'),
+('BSEE');
 
 -- --------------------------------------------------------
 
@@ -43,7 +64,28 @@ INSERT INTO `student` (`idno`, `lname`, `fname`, `mname`, `course`, `sex`) VALUE
 ('003', 'GAMAYOT', 'RICARDO', 'LOLO', 'BSIT', 'female'),
 ('1822', 'ASd', 'edu', 'asd', 'aasd', 'aasd'),
 ('77', 'matias', 'christine', 'eve', 'BSIT', 'female'),
-('771', 'matias', 'christine', 'eve', 'BSIT', 'female');
+('771', 'matias', 'christine', 'eve', 'BSIT', 'female'),
+('898775', 'Reyes', 'Ralph ', 'Daluyon', 'BSIT', 'FEMALE'),
+('998223', 'Dela vega', 'Eduardo', 'Resido', 'BSIT', 'Male'),
+('009928', 'Dela vega', 'eduardo', 'resido', 'BSIT', 'Male');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `userdata`
+--
+
+CREATE TABLE `userdata` (
+  `user` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `userdata`
+--
+
+INSERT INTO `userdata` (`user`, `password`) VALUES
+('edu', 'sadlyf');
 
 --
 -- Indexes for dumped tables
